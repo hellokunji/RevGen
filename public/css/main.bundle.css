@@ -1,0 +1,284 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600&display=swap);
+.signin {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: white;
+  background-image: url(/img/logo.png);
+  background-repeat-y: no-repeat;
+  background-position: bottom center; }
+  .signin .box {
+    display: inline-block;
+    vertical-align: middle; }
+    .signin .box .title {
+      font-weight: 300;
+      font-size: 38px;
+      line-height: 45px;
+      text-align: center;
+      margin-bottom: 50px; }
+    .signin .box .fb_button {
+      background-color: #1777f2;
+      padding: 8px 10px;
+      border: none;
+      box-shadow: none;
+      border-radius: 3px;
+      cursor: pointer; }
+      .signin .box .fb_button img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 22px;
+        height: 22px; }
+      .signin .box .fb_button span {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 16px;
+        color: white;
+        padding-left: 10px; }
+  .signin .align {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%; }
+
+.sidebar {
+  text-decoration: none;
+  background-color: #EFEFEF;
+  width: 100%;
+  height: 100%; }
+  .sidebar > .top {
+    height: 115px;
+    background-image: url(/img/logo.png);
+    background-position: bottom center;
+    background-repeat-y: no-repeat;
+    background-size: 270px; }
+    .sidebar > .top > .color_bar {
+      width: 100%;
+      height: 5px; }
+      .sidebar > .top > .color_bar > div {
+        float: left;
+        width: 20%;
+        height: 100%; }
+      .sidebar > .top > .color_bar > div:nth-child(1) {
+        background-color: #FF0000; }
+      .sidebar > .top > .color_bar > div:nth-child(2) {
+        background-color: #006300; }
+      .sidebar > .top > .color_bar > div:nth-child(3) {
+        background-color: #2BB7B3; }
+      .sidebar > .top > .color_bar > div:nth-child(4) {
+        background-color: #ffd52a; }
+      .sidebar > .top > .color_bar > div:nth-child(5) {
+        background-color: #1777f2; }
+    .sidebar > .top > .info {
+      display: inline-block;
+      width: 100%;
+      padding: 0 15px;
+      margin-top: 33px; }
+      .sidebar > .top > .info > .profile {
+        width: 80%;
+        float: left; }
+        .sidebar > .top > .info > .profile > img {
+          display: inline-block;
+          vertical-align: middle;
+          width: 38px;
+          height: 38px;
+          border-radius: 29px; }
+        .sidebar > .top > .info > .profile > span {
+          font-size: 14px;
+          line-height: 16px;
+          display: inline-block;
+          vertical-align: middle;
+          padding-left: 10px; }
+      .sidebar > .top > .info > .logout {
+        width: 20%;
+        float: left;
+        padding: 11px 0; }
+        .sidebar > .top > .info > .logout button {
+          font-size: 12px;
+          line-height: 16px;
+          color: #FF0000;
+          border: none;
+          background: none;
+          box-shadow: none;
+          float: right;
+          margin: 0;
+          padding: 0;
+          cursor: pointer; }
+  .sidebar > .companies {
+    height: calc(100% - 115px);
+    overflow-y: auto; }
+    .sidebar > .companies > .search {
+      border-bottom: 1px solid #DEDEDE;
+      padding: 10px 15px;
+      position: relative; }
+      .sidebar > .companies > .search > input {
+        background: #DEDEDE;
+        border-radius: 3px;
+        border: none;
+        height: 30px;
+        width: 100%;
+        outline: none;
+        padding-left: 26px;
+        font-size: 14px;
+        line-height: 19px; }
+      .sidebar > .companies > .search > img {
+        position: absolute;
+        left: 22px;
+        top: 18px;
+        width: 14px;
+        height: 14px; }
+    .sidebar > .companies > .list {
+      text-decoration: none; }
+      .sidebar > .companies > .list > .item {
+        padding: 0 15px; }
+        .sidebar > .companies > .list > .item a {
+          text-decoration: none;
+          color: #000000; }
+          .sidebar > .companies > .list > .item a .box {
+            padding: 10px 0;
+            border-bottom: 1px solid #DEDEDE; }
+            .sidebar > .companies > .list > .item a .box > .info {
+              width: 80%;
+              display: inline-block;
+              vertical-align: middle; }
+              .sidebar > .companies > .list > .item a .box > .info > .title {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 16px;
+                margin-bottom: 5px; }
+              .sidebar > .companies > .list > .item a .box > .info > .country {
+                font-size: 12px;
+                line-height: 14px;
+                color: #444444; }
+            .sidebar > .companies > .list > .item a .box > .logo {
+              width: 20%;
+              display: inline-block;
+              vertical-align: middle; }
+              .sidebar > .companies > .list > .item a .box > .logo > img {
+                width: 24px;
+                height: 24px;
+                float: right; }
+      .sidebar > .companies > .list > .item_active {
+        border-bottom: 1px solid #DEDEDE;
+        background-color: #FFFFFF; }
+        .sidebar > .companies > .list > .item_active .box {
+          border-bottom: none; }
+
+.graph {
+  position: relative;
+  height: 400px; }
+  .graph > .bars {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #EFEFEF;
+    height: 400px; }
+    .graph > .bars > .item {
+      float: left;
+      width: 6.5%;
+      height: 100%;
+      margin-right: 0.8%;
+      position: relative; }
+      .graph > .bars > .item > .fill {
+        background-color: red;
+        height: 30%;
+        position: absolute;
+        width: 100%;
+        bottom: 0; }
+        .graph > .bars > .item > .fill .percent {
+          text-align: center;
+          color: black;
+          font-size: 12px;
+          background-color: white;
+          border-radius: 15px;
+          width: calc(100% + 14px);
+          height: 30px;
+          padding: 6px;
+          margin: -15px auto;
+          margin-left: -7px;
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+          display: none; }
+      .graph > .bars > .item > .label {
+        font-size: 11px;
+        text-align: center;
+        position: absolute;
+        bottom: -20px;
+        width: 100%; }
+    .graph > .bars > .item:hover {
+      text-decoration: none; }
+      .graph > .bars > .item:hover .percent {
+        display: block; }
+  .graph > .hor_lines {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1; }
+    .graph > .hor_lines > .item {
+      position: absolute;
+      width: 100%; }
+      .graph > .hor_lines > .item > .line {
+        width: 92%;
+        height: 1px;
+        border-bottom: 1px dashed #DEDEDE;
+        display: inline-block;
+        vertical-align: middle; }
+      .graph > .hor_lines > .item > .label {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: right;
+        width: 8%;
+        font-size: 11px;
+        line-height: 13px; }
+    .graph > .hor_lines > .item:nth-child(1) {
+      top: 0; }
+    .graph > .hor_lines > .item:nth-child(2) {
+      top: 20%; }
+    .graph > .hor_lines > .item:nth-child(3) {
+      top: 40%; }
+    .graph > .hor_lines > .item:nth-child(4) {
+      top: 60%; }
+    .graph > .hor_lines > .item:nth-child(5) {
+      top: 80%; }
+
+.dashboard {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF; }
+  .dashboard > .left {
+    width: 300px;
+    height: 100%;
+    float: left; }
+  .dashboard > .main {
+    width: calc(100% - 300px);
+    height: 100%;
+    float: left;
+    overflow-y: scroll; }
+    .dashboard > .main > .title {
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 31px;
+      padding: 41px 40px;
+      border-bottom: 1px solid #EFEFEF; }
+    .dashboard > .main > .body {
+      padding: 41px 40px; }
+      .dashboard > .main > .body .trending_item {
+        margin-bottom: 100px;
+        border-bottom: 1px solid #DEDEDE;
+        padding-bottom: 115px; }
+        .dashboard > .main > .body .trending_item > .title {
+          font-size: 18px;
+          line-height: 21px;
+          margin-bottom: 10px; }
+
+* {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box; }
+
+button {
+  outline: none; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.05); }
+
