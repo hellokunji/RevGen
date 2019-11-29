@@ -14,7 +14,7 @@ class Dashboard extends React.Component {
     this.state = {};
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const {revenueData} = this.props;
     if (revenueData.apiStatus !== 'success' && revenueData.apiStatus !== 'started') {
       this.props.getRevenueDataStart();

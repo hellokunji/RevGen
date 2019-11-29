@@ -15,6 +15,14 @@ class Sidebar extends React.Component {
     }
   }
 
+  static getDerivedStateFromProps(nextProps, prevState) {
+    if (prevState.data === null && nextProps.revenueData.data !== null) {
+      return {
+        data: nextProps.revenueData.data,
+      }
+    }
+  }
+
   handleLogout = () => {
     firebase.analytics().logEvent('logout');
     firebase.auth().signOut().then(() => {

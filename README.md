@@ -1,4 +1,4 @@
-# TODO APP
+# Revenue Generation Dashboard APP
 
 ##Steps to perform
 
@@ -6,7 +6,7 @@
 npm install
 
 ###Build
-`npm run build` for build
+`npm run build`
 
 ###Run
 `npm run start`

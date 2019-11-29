@@ -1,6 +1,6 @@
 export function filterRevenueData(data, slug) {
   let obj = null;
-  if (isDataValid(data) & isDataValid(slug)) {
+  if (isDataValid(data) && isDataValid(slug)) {
     const index = data.findIndex(item => item.slug === slug);
     if (slug !== -1) obj = data[index];
   }

@@ -1,7 +1,7 @@
 {
   "name": "Todo",
   "version": "1.0.0",
-  "description": "API Garage - TODO Application",
+  "description": "Revenue Generation Dashboard",
   "main": "index.js",
   "scripts": {
     "build": "webpack -d --progress --colors --watch",
